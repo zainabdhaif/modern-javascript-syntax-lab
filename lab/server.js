@@ -41,3 +41,16 @@ const myCar = {...car};
 myCar.model = 'q7';
 console.log(`Exercise 5 solution: \ncar details: make -  ${car.make} || model - ${car.model} \nmyCar details: make -  ${myCar.make} || model - ${myCar.model} `);
   
+
+//exericse 6
+// Create an object named userProfile. 
+// Define a variable named propertyName and assign a string to it (like a username, age, or email). 
+// Use propertyName as a dynamic key in userProfile, assigning a relevant value.
+
+const propertyName = 'username';
+const userProfile = {
+  [propertyName]: 'zainab',
+}
+console.log(userProfile);
+
+//exericse 7
