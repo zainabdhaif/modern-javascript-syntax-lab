@@ -53,4 +53,46 @@ const userProfile = {
 }
 console.log(userProfile);
 
-//exericse 7
+//exericse 7 -- this was done in a seperate folder called "exercise7"
+
+
+//exericse 8
+// Create a function that takes two parameters, `noun` and `adjective`, both with the following respective default values:
+// 1. `cat`
+// 2. `white`
+// The function should log a sentence 'The cat is white.' by default. The function should substitute the appropriate parameters when supplied arguments.
+function joinWords(noun = 'cat', adjective ='white'){
+  return `The ${noun} is ${adjective}`;
+}
+console.log('Exercise 7 solution: ' + joinWords('zainab', 'tired'));
+
+//exericse 9
+// Convert the following `if...else` statement in to a ternary:
+
+let pizza = 'tasty';
+
+if (pizza === 'tasty') {
+  console.log('yum');
+} else {
+  console.log('yuck');
+}
+
+let flavor = pizza === 'tasty' ? 'yum' : 'yuck';
+console.log(flavor);
+
+//exericse 10
+// 1. SET LANGUAGE
+
+// Construct a single line of code that assigns a default value using the logical OR operator. This line should match the logic of the following statement: 
+
+// "LANG is equal to localLangConfig or the default value of English."
+
+const localLangConfig = null;  // Change to 'es', 'fr', etc., or keep it null
+
+// a. Create a variable called LANG
+// b. Assign LANG the value of localLangConfig or 'en' as a default
+
+// Your code here
+
+// Log the result
+console.log('Language setting:', LANG);
