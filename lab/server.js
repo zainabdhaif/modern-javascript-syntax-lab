@@ -1,19 +1,43 @@
 //exericse 1
 const nums = [13, 87, 2, 89, 12, 4, 90, 63];
-
 // Create a new array where each value is multiplied by 2 and log the new array.
 const nums2 = nums.map((currentElement) => {
     return currentElement *2;
   });
-  
   console.log(`Exercise 1 solution: ${nums2}`);
+
+
 
 //exericse 2
 // Given the following array, use destructuring to pull out the first and second values and place them into variables. Log both variables.
-
 const pizzaToppings = ['Pineapple', 'Olives', 'Anchovies'];
-
 const [firstTopping, secondTopping] = pizzaToppings;
 console.log(`Exercise 2 solution: first topping - ${firstTopping} || second topping - ${secondTopping}`);
 
 
+//exericse 3
+// Given the following object, use destructuring to create variables `make` and `model` that will hold the respective values.
+
+const car = {
+    make: 'Audi',
+    model: 'q5',
+  };
+const { make, model } = car;
+console.log(`Exercise 3 solution: make - ${make} || model - ${model}`);
+
+//exericse 4
+// Duplicate the following array using the spread operator and assign it to `controversialPizzaToppings`. Then, log the variable.
+
+// const pizzaToppings = ['Pineapple', 'Olives', 'Anchovies']; -- this is commented because we cannot declare it twice and we already declared it above
+
+const controversialPizzaToppings = [...pizzaToppings, ...pizzaToppings];
+console.log(`Exercise 4 solution: ${controversialPizzaToppings}`);
+
+//exericse 5
+// Duplicate the following object and spread its values into a new variable `myCar`.
+// const car = { make: 'Audi', model: 'q5'}; -- this is commented because we cannot declare it twice and we already declared it above
+// Change the `model` property of `myCar` to 'q7'. Log both objects.
+const myCar = {...car};
+myCar.model = 'q7';
+console.log(`Exercise 5 solution: \ncar details: make -  ${car.make} || model - ${car.model} \nmyCar details: make -  ${myCar.make} || model - ${myCar.model} `);
+  
