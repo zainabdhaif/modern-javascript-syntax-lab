@@ -91,8 +91,30 @@ const localLangConfig = null;  // Change to 'es', 'fr', etc., or keep it null
 
 // a. Create a variable called LANG
 // b. Assign LANG the value of localLangConfig or 'en' as a default
+const LANG = localLangConfig || 'en';
+
+console.log(`Exercise 10 solution: language setting - ${LANG}`); 
+
+
+// 2. SET WEBSITE THEME
+
+const userSavedTheme = null; // Change to 'dark', 'contrast', etc., or keep it null
+
+// a. Create a variable called USER_THEME
+// b. Assign USER_THEME the value of userSavedTheme or 'light' as a default
+const USER_THEME = userSavedTheme || 'light';
 
 // Your code here
+console.log('User theme setting:', USER_THEME);
 
-// Log the result
-console.log('Language setting:', LANG);
+
+//exericse 11
+// Now check for `cat.age` on `adventurer`. See how it errors out? Use optional chaining in a console.log that it returns undefined instead.
+
+const adventurer = {
+  name: 'Alice',
+};
+
+let cat= adventurer.cate?.name;
+
+console.log(cat);
